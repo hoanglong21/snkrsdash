@@ -1,0 +1,99 @@
+.cart_apply_coupon_box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #f5f0e9;
+    padding-bottom: 70px;
+    padding-top: 38px;
+}
+
+.apply_coupon {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.apply_coupon_input_box input[type="text"] {
+    font-size: 16px;
+    color: #878986;
+    height: 80px;
+    max-width: 365px;
+    width: 100%;
+    padding: 0 30px;
+    background: #f5f0e9;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.apply-coupon-button {
+    margin-left: 10px;
+}
+
+.thm-btn:hover {
+    background-color: #FF7B6A;
+    color: #ffffff;
+}
+
+.total_box {
+    margin: 0;
+    float: right;
+    text-align: right;
+}
+.total_box li {
+    color: #878986;
+    font-size: 18px;
+    padding-bottom: 6px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.total_box li:hover {
+    color: #FF7B6A;
+}
+.total_box li:last-child {
+    padding-bottom: 0;
+}
+.total_box li span {
+    font-size: 26px;
+    color: #FF7B6A;
+    font-weight: 700;
+    margin-right: 65px;
+    text-transform: uppercase;
+}
+.button_box {
+    position: relative;
+    display: block;
+    float: right;
+    margin-top: 60px;
+}
+
+.button_box {
+    position: relative;
+    display: block;
+    float: right;
+    margin-top: 60px;
+}
+.button_box .update_btn {
+    margin-right: 5px;
+    background: #f5f0e9;
+    color: #878986;
+}
+.button_box .update_btn:hover {
+    color: #ffffff;
+    background: #FF7B6A;
+}
+
+.thm-btn {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+    background-color: #FF523B;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    padding: 23px 50px;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+

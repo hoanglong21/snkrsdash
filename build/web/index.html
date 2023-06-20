@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="css/style3.css">
+    </head>
+    <body>
+        <header>
+            <a href="home"><img class="logo" src="images2/Logo.png" style="height: 50px;filter: invert(1);"/></a>
+            <ul>
+                <li><a href="#" class="active">WELCOME</a></li>
+                <li><a href="home">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="products">Products</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <img src="images2/stars.png" id="stars">
+            <img src="images2/moon.png" id="moon">
+            <img src="images2/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">SNKRSDASH</h2>
+            <a href="discount.jsp" id="btn">DISCOUNT NOW</a>
+            <img src="images2/mountains_front.png" id="mountains_front">
+        </section>
+
+        <div class="sec" id="sec">
+            <h2>SNEAKERHEAD - Another World</h2>
+            <iframe id="frame"style="width: 100%; height: 100vh" src="https://www.youtube.com/embed/wrkXw6ZHg-8?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br><br><br>
+            <h2>Best Seller</h2>
+            <iframe id='webgl_iframe' scrolling="no" frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr="" mozallowfullscreen="true" src="https://play.unity3dusercontent.com/webgl/0aa4316b-2248-482e-9cbf-a02eb3aed607?screenshot=false&embedType=embed" style="width: 100%;
+height: 113vh" onmousewheel="" webkitallowfullscreen="true"></iframe>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function () {
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
