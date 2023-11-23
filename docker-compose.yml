@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mssql-container:
+    build: 
+        context: .
+        dockerfile: Dockerfile-mssql
+    environment:
+      SA_PASSWORD: Long@123456
+      ACCEPT_EULA: Y
+    ports:
+      - "1435:1433"
+    networks:
+      - app-network
+  java-app-container:
+    build: 
+        context: .
+        dockerfile: Dockerfile
+    depends_on:
+      - mssql-container
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

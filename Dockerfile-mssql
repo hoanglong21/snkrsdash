@@ -1,0 +1,12 @@
+# Use an official SQL Server runtime as a parent image
+FROM mcr.microsoft.com/mssql/server:2022-latest
+
+# Set environment variables
+ENV ACCEPT_EULA=Y
+ENV SA_PASSWORD=Long@123456
+
+# Create a directory to store initialization scripts
+WORKDIR /docker-entrypoint-initdb.d
+
+# Copy the SQL script to initialize the database with dummy data
+COPY setup.sql .
